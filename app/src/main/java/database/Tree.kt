@@ -17,9 +17,11 @@ data class Tree(
 
     //points to fruit type in fruit_info_table
     @ColumnInfo(name = "fruit_type")
-    var fruit: Int = 0,
+    var fruit: Int,
 
-    //gps location
-    @ColumnInfo(name = "tree_location")
-    var location: String = "",
+    @ColumnInfo(name = "tree_latitude")
+    var lat: Double,
+
+    @ColumnInfo(name = "tree_longitude")
+    var long: Double
 )

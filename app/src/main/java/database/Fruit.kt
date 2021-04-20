@@ -18,11 +18,11 @@ data class Fruit (
     var fruitId: Int = 0,
 
     @ColumnInfo(name = "fruit_name")
-    var fruitName: String = "",
+    var fruitName: String,
 
     //A-L = Jan-Dec
     @ColumnInfo(name = "fruit_season")
-    var fruitSeason: String = ""
+    var fruitSeason: String
         ){
     private val date = Calendar.getInstance().time
     private val month = SimpleDateFormat("MM").format(date)
